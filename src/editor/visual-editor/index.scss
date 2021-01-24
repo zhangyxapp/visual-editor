@@ -1,0 +1,56 @@
+$smPadding: 12px;
+$midPadding: 24px;
+$borderStyle: 1px solid #dedede;
+$backgroundColor: #fff;
+$touchBarColor: #ccc;
+
+.visula-editor {
+  width: 100%;
+  height: 100%;
+  background: #c5c1c1;
+  .visula-editor-content {
+    padding: $midPadding;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    .visula-editor-component {
+      width: 300px;
+      height: 100%;
+      background: $backgroundColor;
+      overflow: auto;
+      border: $borderStyle;
+    }
+    .visula-editor-oper {
+      flex: 1;
+      height: 100%;
+      overflow: auto;
+      background: $backgroundColor;
+      border: $borderStyle;
+      border-right: none;
+      border-left: none;
+      .visula-editor-oper-menu {
+        width: 70%;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .visula-editor-oper-menu-item {
+          text-align: center;
+          width: 50px;
+          font-size: 32px;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+      }
+    }
+    .visula-editor-config {
+      width: 300px;
+      height: 100%;
+      overflow: auto;
+      border: $borderStyle;
+      background: $backgroundColor;
+    }
+  }
+}
